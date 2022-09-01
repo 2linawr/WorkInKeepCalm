@@ -1,6 +1,1 @@
-localhost
-root
-
-localhost
-root
 
