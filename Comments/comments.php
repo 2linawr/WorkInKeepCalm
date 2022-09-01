@@ -159,7 +159,7 @@ function locations(){
   <div class="item">
 <?
       include '../Connect/ConnectDB.php';
-            $result = mysqli_query($link,"SELECT * FROM comments"); /*Получаем все данные из таблицы*/
+            $result = mysqli_query($link,"SELECT * FROM comments ORDER BY RAND()LIMIT 2"); /*Получаем все данные из таблицы*/
             $comment = $result->fetch_assoc(); /* В результирующий массив */
             $i=0;
             do{
@@ -174,7 +174,7 @@ function locations(){
   <div class="item">
   <?
       include '../Connect/ConnectDB.php';
-            $result = mysqli_query($link,"SELECT * FROM comments"); /*Получаем все данные из таблицы*/
+            $result = mysqli_query($link,"SELECT * FROM comments ORDER BY RAND()LIMIT 2"); /*Получаем все данные из таблицы*/
             $comment = $result->fetch_assoc(); /* В результирующий массив */
             $i=0;
             do{
@@ -189,7 +189,7 @@ function locations(){
   <div class="item">
   <?
       include '../Connect/ConnectDB.php';
-            $result = mysqli_query($link,"SELECT * FROM comments"); /*Получаем все данные из таблицы*/
+            $result = mysqli_query($link,"SELECT * FROM comments ORDER BY RAND()LIMIT 1"); /*Получаем все данные из таблицы*/
             $comment = $result->fetch_assoc(); /* В результирующий массив */
             $i=0;
             do{
